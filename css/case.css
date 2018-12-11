@@ -1,0 +1,402 @@
+/* 初始化代码 */
+body,
+div,
+span,
+p,
+img,
+input,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+a,
+strong,
+em,
+del,
+i,
+ins {
+    margin: 0;
+    padding: 0;
+    /* 清除标签的默认内外边距 */
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+    /* display: block; */
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+}
+
+i {
+    font-style: normal;
+}
+
+body {
+    font: 12px/100% "微软雅黑";
+    background-color: #282828;
+}
+
+.w {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* 头部导航 */
+.header {
+    width: 100%;
+    height: 86px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10002;
+    overflow: hidden;
+}
+
+.header .log {
+    margin-left: 60px;
+    margin-top: 17px;
+    float: left;
+}
+
+.header .log a {
+    display: block;
+    width: 201px;
+    height: 61px;
+    background: url("../images/logo.png");
+    text-indent: -9999px;
+}
+
+.header .nav {
+    float: right;
+    margin-right: 50px;
+    margin-top: 46px;
+}
+
+.header .nav li {
+    float: left;
+    font-size: 14px;
+    line-height: 14px;
+    margin-left: 40px;
+}
+
+.header .nav li a {
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+}
+
+.header .nav li a:hover span:nth-child(1) {
+    margin-top: -24px;
+}
+
+.header .nav li a span {
+    display: block;
+    transition: all 0.3s;
+}
+
+.header .nav li a span:nth-child(2) {
+    font-weight: bold;
+    color: #610085;
+}
+
+#caseUp {
+    font-weight: bold;
+    color: #610085;
+}
+
+#caseUp:hover {
+    margin: 0;
+}
+.headerTow {
+    width: 100%;
+    height: 86px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10001;
+    display: none;
+}
+
+.headerTow .log {
+    margin-left: 60px;
+    margin-top: 17px;
+    float: left;
+}
+
+.headerTow .log a {
+    display: block;
+    width: 201px;
+    height: 61px;
+    background: url("../images/logo.png");
+    text-indent: -9999px;
+}
+
+.headerTow .breadNav {
+    width: 34px;
+    height: 34px;
+    float: right;
+    margin-right: 30px;
+    margin-top: 25px;
+    text-align: center;
+    line-height: 34px;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.headerTow .breadNav i {
+    font-size: 34px !important;
+    font-weight: 900;
+    transition: all, 0.3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.headerTow .breadNav i:hover {
+    font-size: 38px !important;
+}
+
+.fullPaseNavBg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #282828;
+    display: none;
+    z-index: 10000;
+}
+
+.fullPaseNavBg .innerNav {
+    width: 1000px;
+    height: 514px;
+    margin: 160px auto 0;
+}
+
+.fullPaseNavBg .innerNav li {
+    width: 257px;
+    height: 130px;
+    padding-left: 76px;
+    float: left;
+    color: #fff;
+}
+
+.fullPaseNavBg .innerNav li:nth-child(1) {
+    background: url(../images/homes.png) no-repeat 10px 12px;
+}
+
+.fullPaseNavBg .innerNav li:nth-child(2) {
+    background: url(../images/cases.png) no-repeat 10px 12px;
+}
+
+.fullPaseNavBg .innerNav li:nth-child(3) {
+    background: url(../images/Advantages.png) no-repeat 10px 12px;
+}
+
+.fullPaseNavBg .innerNav li:nth-child(4) {
+    background: url(../images/tiyans.png) no-repeat 10px 12px;
+}
+
+.fullPaseNavBg .innerNav li:nth-child(5) {
+    background: url(../images/services.png) no-repeat 10px 12px;
+}
+
+.fullPaseNavBg .innerNav li:nth-child(6) {
+    background: url(../images/abouts.png) no-repeat 10px 12px;
+}
+
+.fullPaseNavBg .innerNav li:nth-child(7) {
+    background: url(../images/contacts.png) no-repeat 10px 12px;
+}
+
+.fullPaseNavBg .innerNav li a {
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.fullPaseNavBg .innerNav li a:hover {
+    text-decoration: underline;
+}
+
+.fullPaseNavBg .innerNav li a i {
+    padding-left: 15px;
+    font-size: 12px;
+    font-style: italic;
+    color: #949494;
+}
+
+/* 头部导航] */
+
+/*主体列表部分开始*/
+.main {
+    margin-top: 170px;
+    margin-bottom: 30px;
+    height: 1650px;
+}
+
+.main li {
+    float: left;
+    width: 280px;
+    height: 250px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.main li:nth-child(4),
+.main li:nth-child(8),
+.main li:nth-child(12),
+.main li:nth-child(16),
+.main li:nth-child(20),
+.main li:nth-child(24) {
+    margin-right: 0;
+}
+
+.main li:nth-child(21),
+.main li:nth-child(22),
+.main li:nth-child(23),
+.main li:nth-child(24) {
+    margin-bottom: 0;
+}
+
+.main div.up a {
+    display: block;
+    width: 280px;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+}
+
+.main .up img.up_below {
+    position: absolute;
+    top: 0;
+}
+
+.main .up img.up_over {
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.9;
+}
+
+.main .down {
+    width: 260px;
+    height: 49px;
+    border-top: 1px solid #f2f2f2;
+    padding: 14px 0 6px 20px;
+    background-color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+}
+
+.main .down a {
+    color: #000;
+    line-height: 24px;
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    z-index: 10;
+}
+
+.main .down a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.main .down p.industry {
+    color: #999999;
+    line-height: 24px;
+    position: absolute;
+    top: 38px;
+    left: 20px;
+    z-index: 10;
+}
+
+.main p.down_color {
+    position: absolute;
+    width: 280px;
+    height: 70px;
+    background-color: purple;
+    bottom: -70px;
+    left: 0;
+    /*bottom: 0;*/
+}
+
+/*主体列表部分结束*/
+
+/* 右侧固定信息栏 */
+.sidebarIfo {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    margin-top: -80px;
+    width: 55px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 12px 0 0 0;
+    border-radius: 8px 0 0 8px;
+    z-index: 999999;
+}
+
+.sidebarIfo li {
+    padding-left: 17px;
+    border-radius: 8px 0 0 8px;
+    transition: all 0.3s;
+}
+
+.sidebarIfo li:last-child {
+    padding-left: 20px;
+}
+
+.sidebarIfo li:hover {
+    margin-left: -105px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.sidebarIfo li a {
+    display: block;
+}
+
+/* 右侧固定信息栏 */
+
+

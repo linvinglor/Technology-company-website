@@ -1,0 +1,79 @@
+/*初始化代码*/
+html,
+body,
+div,
+span,
+a,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+i,
+em,
+strong,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+i {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    /***************************************************  a的初始化样式  *********************************************************/
+    color: #000000;
+}
+
+input {
+    border: 0 none;
+    outline: 0 none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+}
+
+body {
+    /*height: 10000px;*/
+    background-color: #f6f6f6;
+    font: 12px/100% "微软雅黑";
+
+}
+
+/***************************************************  设置版心  **************************************************************/
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/*初始化代码】*/
